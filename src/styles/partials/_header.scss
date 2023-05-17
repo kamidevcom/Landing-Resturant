@@ -1,0 +1,72 @@
+.c-section--hero {
+  background-image: url("../../images/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  color: #fff;
+  .c-hero {
+    max-width: 584px;
+    margin: auto;
+    padding-top: 400px;
+
+    .c-hero__title {
+      font-family: $roboto-slab;
+      text-align: center;
+      font-size: 52px;
+      font-weight: 700;
+      line-height: 62px;
+      margin-bottom: 20px;
+    }
+
+    .c-hero__description {
+      text-align: center;
+      line-height: 39px;
+      font-weight: 400;
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .c-hero__btn-group {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 69px;
+    }
+  }
+}
+
+.c-navbar {
+  position: absolute;
+  width: 100%;
+  padding-top: 60px;
+  .c-navbar--container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .u-link {
+      .c-navbar__logo {
+        height: 113px;
+      }
+    }
+    .o-navbar {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+
+      li {
+        a {
+          display: inline-block;
+          padding: 7px 0;
+        }
+
+        &.current-menu-item {
+          border-bottom: 1px solid $base-color-light;
+        }
+      }
+    }
+    .c-navbar__sandwich {
+      position: absolute;
+    }
+  }
+}

@@ -1,68 +1,129 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="EN">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXX-X"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXX-X"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+      gtag("config", "UA-XXXXXX-X");
+    </script>
 
-    gtag('config', 'UA-XXXXXX-X');
-  </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Starter Kit</title>
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML Starter Kit</title>
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no" />
 
-  <!-- Disable tap highlight on IE -->
-  <meta name="msapplication-tap-highlight" content="no">
-  
-  <!-- Web Application Manifest -->
-  <link rel="manifest" href="manifest.json">
-  
-  <!-- Add to homescreen for Chrome on Android -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="application-name" content="MarkItAsDone">
-  
-  <!-- Add to homescreen for Safari on iOS -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="MarkItAsDone">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=1.0.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=1.0.0">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=1.0.0">
-  <link rel="manifest" href="site.webmanifest?v=1.0.0">
-  <link rel="mask-icon" href="safari-pinned-tab.svg?v=1.0.0" color="#3c3ce5">
-  <link rel="shortcut icon" href="favicon.ico?v=1.0.0">
-  
-  <!-- Tile icon for Win8 (144x144 + tile color) -->
-  <meta name="msapplication-TileImage" content="mstile-150x150.png">
-  <meta name="msapplication-TileColor" content="#3c3ce5">
-  
-  <!-- Color the status bar on mobile devices -->
-  <meta name="theme-color" content="#ffffff">
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json" />
 
-  <!-- build:css styles/vendor.min.css -->
-  <!-- endbuild -->
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="MarkItAsDone" />
 
-  <!-- build:css styles/main.min.css -->
-  <link rel="stylesheet" href="styles/main.css">
-  <!-- endbuild -->
-</head>
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="MarkItAsDone" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="apple-touch-icon.png?v=1.0.0"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon-32x32.png?v=1.0.0"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon-16x16.png?v=1.0.0"
+    />
+    <link rel="manifest" href="site.webmanifest?v=1.0.0" />
+    <link
+      rel="mask-icon"
+      href="safari-pinned-tab.svg?v=1.0.0"
+      color="#3c3ce5"
+    />
+    <link rel="shortcut icon" href="favicon.ico?v=1.0.0" />
 
-<body>
-  <h1>Hi, FROM HTML STARTER KIT</h1>
-  <!-- build:js scripts/vendor.min.js -->
-  <!-- endbuild -->
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="mstile-150x150.png" />
+    <meta name="msapplication-TileColor" content="#3c3ce5" />
 
-  <!-- build:js scripts/main.min.js -->
-  <script src="scripts/main.js"></script>
-  <!-- endbuild -->
+    <!-- Color the status bar on mobile devices -->
+    <meta name="theme-color" content="#ffffff" />
 
-</body>
+    <!-- build:css styles/vendor.min.css -->
+    <!-- endbuild -->
 
+    <!-- build:css styles/main.min.css -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <!-- endbuild -->
+  </head>
+
+  <body>
+
+    <!-- Header Section -->
+    <header>
+      <nav class="c-navbar">
+        <div class="container c-navbar--container">
+          <a href="#" class="u-link" aria-label="Mercadito">
+            <img class="c-navbar__logo" src="images/logo.svg" alt="" />
+          </a>
+          <ul class="o-navbar">
+            <li class="current-menu-item"><a href="#about-us">WHY US</a></li>
+            <li><a href="#menu">MENU</a></li>
+            <li><a href="#popular">POPULAR DISHES</a></li>
+            <li><a href="#book">BOOK</a></li>
+            <li><a href="#contact-us">CONTACT</a></li>
+          </ul>
+          <div class="c-navbar__sandwich js-sandwich-menu">
+            <span></span> <span></span> <span></span>
+          </div>
+        </div>
+      </nav>
+
+      <section class="c-section--hero">
+        <div class="container">
+          <div class="c-hero">
+            <h1 class="c-hero__title">
+              Book a table in the best <br />Mexican restaturant
+            </h1>
+            <p class="c-hero__description u-text-center">
+              30% off for the Christmas
+            </p>
+            <div class="c-hero__btn-group">
+              <button class="c-btn c-btn--primary">Book Now</button>
+              <button class="c-btn c-btn--secondary">See Menu</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- end - Header Section -->
+
+    
+
+    <!-- build:js scripts/vendor.min.js -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.min.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
 </html>
