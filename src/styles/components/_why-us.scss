@@ -1,5 +1,5 @@
 .c-section--why-us {
-  padding: 96px 0;
+  padding: 96px 0 64px 0;
   color: #fff;
 
   .c-why-us{
@@ -10,9 +10,16 @@
   .c-why-us__image-wrap{
     position: relative;
     top: 64px;
+
+    img{
+      height: 100%;
+    }
   }
 
   .c-why-us--content{
     padding: 104px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }

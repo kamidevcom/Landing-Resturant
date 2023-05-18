@@ -1,9 +1,8 @@
 .c-btn {
+  @include font-size(22px,36px);
   border-radius: $global-radius;
   font-weight: 500px;
-  line-height: 36px;
   padding: 9px 49px;
-  font-size: 22px;
   border: none;
 }
 
