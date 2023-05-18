@@ -1,18 +1,18 @@
-.c-btn{
+.c-btn {
   border-radius: $global-radius;
   font-weight: 500px;
   line-height: 36px;
   padding: 9px 49px;
   font-size: 22px;
   border: none;
-} 
+}
 
-.c-btn--primary{
-  background-color: $base-color;
+.c-btn--primary {
+  background-color: $orange-600;
   color: #fff;
 }
 
-.c-btn--secondary{
-  background-color: $secondary-color;
+.c-btn--secondary {
+  background-color: $gray-700;
   color: #fff;
 }

@@ -1,0 +1,25 @@
+.o-section--title {
+  position: relative;
+  font-family: $roboto-slab;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 53px;
+  padding-bottom: 14px;
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $orange-600;
+    width: 44px;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.o-section--text {
+  font-family: $catamaran;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  color: #dadada;
+}
