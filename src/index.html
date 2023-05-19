@@ -92,7 +92,9 @@
             <li><a href="#contact-us">CONTACT</a></li>
           </ul>
           <div class="c-navbar__sandwich js-sandwich-menu">
-            <span></span> <span></span> <span></span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="24" viewBox="0 0 34 24" fill="none">
+              <path d="M34 23.3337H0V19.5559H34V23.3337ZM34 13.8892H0V10.1114H34V13.8892ZM34 0.666992V4.44477H0V0.666992H34Z" fill="white"/>
+              </svg>
           </div>
         </div>
       </nav>
@@ -101,7 +103,7 @@
         <div class="container">
           <div class="c-hero">
             <h1 class="c-hero__title">
-              Book a table in the best <br />Mexican restaturant
+              Book a table in the best Mexican restaturant
             </h1>
             <p class="c-hero__description u-text-center">
               30% off for the Christmas
@@ -121,7 +123,7 @@
       <div class="container">
         <div class="c-section c-why-us">
           <div class="c-why-us--content">
-            <h2 class="o-section--title">Why Contomers Like us?</h2>
+            <h2 class="o-section--title">Why Costomers Like us?</h2>
             <div>
               <p class="o-section--text">
                 When we first opened our restaturant, it didn't take a long time
@@ -255,7 +257,7 @@
               The Most Popular Dishes
             </h3>
             <div class="c-popular-dishes__slide-number">
-              <div class="c-popular-dishes__slide-number--previous js-popular-dishes-previous">
+              <div class="c-popular-dishes__slide-number--previous js-popular-dishes--previous">
                 <svg width="36" height="16" viewBox="0 0 36 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M0.275005 7.30499L7.46872 0.268346C7.83412 -0.0894488 8.42027 -0.0894488 8.78567 0.268346C9.15106 0.626142 9.15106 1.2001 8.78567 1.5579L3.18294 7.04409H35.0637C35.5813 7.04409 36 7.45407 36 7.96094C36 8.46782 35.5813 8.87779 35.0637 8.87779H3.18294L8.78567 14.3491C9.15106 14.7069 9.15106 15.2808 8.78567 15.6386C8.60297 15.8175 8.36699 15.907 8.12339 15.907C7.87979 15.907 7.64381 15.8175 7.46111 15.6386L0.267391 8.59454C-0.0903893 8.2442 -0.0903893 7.66278 0.275005 7.30499Z"
@@ -265,7 +267,7 @@
               <div class="c-popular-dishes__slide-number--content">
                 <span class="">1</span> / <span>3</span>
               </div>
-              <div class="c-popular-dishes__slide-number--next js-popular-dishes-next">
+              <div class="c-popular-dishes__slide-number--next js-popular-dishes--next">
                 <svg width="37" height="16" viewBox="0 0 37 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M36.7235 7.30499L29.5298 0.268346C29.1644 -0.0894488 28.5783 -0.0894488 28.2129 0.268346C27.8475 0.626142 27.8475 1.2001 28.2129 1.5579L33.8156 7.04409H1.93486C1.41722 7.04409 0.998535 7.45407 0.998535 7.96094C0.998535 8.46782 1.41722 8.87779 1.93486 8.87779H33.8156L28.2129 14.3491C27.8475 14.7069 27.8475 15.2808 28.2129 15.6386C28.3956 15.8175 28.6315 15.907 28.8751 15.907C29.1187 15.907 29.3547 15.8175 29.5374 15.6386L36.7311 8.59454C37.0889 8.2442 37.0889 7.66278 36.7235 7.30499Z"
@@ -338,13 +340,18 @@
                 <span class="c-popular-dishes__price">$36</span>
               </div>
             </div>
-            
+
           </div>
       </div>
     </section>
     <!-- end - Popular Dishes -->
 
     <!-- build:js scripts/vendor.min.js -->
+    <!-- endbuild -->
+
+
+    <!-- build:js scripts/vendor.min.js -->
+    <script src="/node_modules/flickity/dist/flickity.pkgd.min.js"></script>
     <!-- endbuild -->
 
     <!-- build:js scripts/main.min.js -->
