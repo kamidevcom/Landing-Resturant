@@ -40,6 +40,10 @@
   }
 }
 
+.c-popular-dishes__image img{
+  width: 100%;
+}
+
 .c-popular-dishes__content {
   padding-top: 40px;
   text-align: center;
@@ -91,4 +95,8 @@
   @include mq(lg) {
     width: 100%;
   }
+}
+
+.c-popular-dishes__slide-number--content .active {
+  color: $orange-500;
 }

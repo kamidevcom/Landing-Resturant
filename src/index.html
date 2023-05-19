@@ -84,7 +84,7 @@
           <a href="#" class="u-link" aria-label="Mercadito">
             <img class="c-navbar__logo" src="images/logo.svg" alt="" />
           </a>
-          <ul class="o-navbar">
+          <ul class="o-navbar js-nav">
             <li class="current-menu-item"><a href="#about-us">WHY US</a></li>
             <li><a href="#menu">MENU</a></li>
             <li><a href="#popular">POPULAR DISHES</a></li>
@@ -92,9 +92,10 @@
             <li><a href="#contact-us">CONTACT</a></li>
           </ul>
           <div class="c-navbar__sandwich js-sandwich-menu">
-            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="24" viewBox="0 0 34 24" fill="none">
-              <path d="M34 23.3337H0V19.5559H34V23.3337ZM34 13.8892H0V10.1114H34V13.8892ZM34 0.666992V4.44477H0V0.666992H34Z" fill="white"/>
-              </svg>
+            <input class="c-hamburger__checkbox js-hamburger" type="checkbox">
+            <span class="c-hamburger__icon"></span>
+            <span class="c-hamburger__icon"></span>
+            <span class="c-hamburger__icon"></span>
           </div>
         </div>
       </nav>
@@ -158,18 +159,18 @@
                 <h3 class="o-section--title">Our Menu</h3>
 
                 <ul class="c-tab__items">
-                  <li class="is-active">starter</li>
-                  <li class="">main dishes</li>
-                  <li class="">desserts</li>
+                  <li class="is-active js-tab--item">starter</li>
+                  <li class="js-tab--item">main dishes</li>
+                  <li class="js-tab--item">desserts</li>
                 </ul>
               </div>
               <div class="c-our-menu__list">
                 <div class="c-tab__content js-our-menu__list is-active">
                   <div class="c-our-menu__item">
                     <div class="c-our-menu__item--head">
-                      <h5 class="c-title">Dim Sums</h5>
+                      <h5 class="c-title">Pork Wontons</h5>
                       <p class="c-text">
-                        Chestnuts, mushroom, spring onion, ginger, coriander
+                        Pork, chestnuts, bamboo shoots, spring onion egg, wonton
                       </p>
                     </div>
                     <span class="c-price">$35</span>
@@ -185,47 +186,85 @@
                   </div>
                   <div class="c-our-menu__item">
                     <div class="c-our-menu__item--head">
-                      <h5 class="c-title">Dim Sums</h5>
+                      <h5 class="c-title">Real Kung Pao chicken</h5>
                       <p class="c-text">
-                        Chestnuts, mushroom, spring onion, ginger, coriander
+                        Peanuts, chicken tights, rice wine, cornflour, soy sauce, chillies
                       </p>
                     </div>
                     <span class="c-price">$35</span>
                   </div>
                   <div class="c-our-menu__item">
                     <div class="c-our-menu__item--head">
-                      <h5 class="c-title">Dim Sums</h5>
+                      <h5 class="c-title">Stir Fried Tofu with Rice</h5>
                       <p class="c-text">
-                        Chestnuts, mushroom, spring onion, ginger, coriander
+                        Tofu, rice, vinger, soy sauce, seasmae oil, ginger
                       </p>
                     </div>
                     <span class="c-price">$35</span>
                   </div>
                 </div>
-                <div class="c-tab__content js-our-menu__list is-active">
+                <div class="c-tab__content js-our-menu__list">
                   <div class="c-our-menu__item">
                     <div class="c-our-menu__item--head">
-                      <h5 class="c-title">Dim Sums</h5>
+                      <h5 class="c-title">Stir Fried Tofu with Rice</h5>
                       <p class="c-text">
-                        Chestnuts, mushroom, spring onion, ginger, coriander
+                        Tofu, rice, vinger, soy sauce, seasmae oil, ginger
                       </p>
                     </div>
                     <span class="c-price">$35</span>
                   </div>
                   <div class="c-our-menu__item">
                     <div class="c-our-menu__item--head">
-                      <h5 class="c-title">Dim Sums</h5>
+                      <h5 class="c-title">Chinese pepper steak</h5>
                       <p class="c-text">
-                        Chestnuts, mushroom, spring onion, ginger, coriander
+                        Steak, pepper, vinger wine, ginger
                       </p>
                     </div>
                     <span class="c-price">$35</span>
                   </div>
                   <div class="c-our-menu__item">
                     <div class="c-our-menu__item--head">
-                      <h5 class="c-title">Dim Sums</h5>
+                      <h5 class="c-title">Chicken with Chestnuts</h5>
                       <p class="c-text">
-                        Chestnuts, mushroom, spring onion, ginger, coriander
+                        Chicken, chestnuts, soy sauce, vinger
+                      </p>
+                    </div>
+                    <span class="c-price">$35</span>
+                  </div>
+                  <div class="c-our-menu__item">
+                    <div class="c-our-menu__item--head">
+                      <h5 class="c-title">Honey Walnut Shrimp</h5>
+                      <p class="c-text">
+                        Wulnuts, mayonnaise, prawns, honey, egg, rice flour
+                      </p>
+                    </div>
+                    <span class="c-price">$35</span>
+                  </div>
+                </div>
+                <div class="c-tab__content js-our-menu__list">
+                  <div class="c-our-menu__item">
+                    <div class="c-our-menu__item--head">
+                      <h5 class="c-title">Kung Pao chicken</h5>
+                      <p class="c-text">
+                        Chicken tights, shaoxing wine, soy sauce, chilli, peanuts, cucumber
+                      </p>
+                    </div>
+                    <span class="c-price">$35</span>
+                  </div>
+                  <div class="c-our-menu__item">
+                    <div class="c-our-menu__item--head">
+                      <h5 class="c-title">Tsao's chicken</h5>
+                      <p class="c-text">
+                        Chicken tights, rice vinger, rice wine, orange zest, banana ketchup, garlic
+                      </p>
+                    </div>
+                    <span class="c-price">$35</span>
+                  </div>
+                  <div class="c-our-menu__item">
+                    <div class="c-our-menu__item--head">
+                      <h5 class="c-title">Chinese Steamed Halibut</h5>
+                      <p class="c-text">
+                        Fillet halibut, ginger, coriander, soy sauce
                       </p>
                     </div>
                     <span class="c-price">$35</span>
@@ -265,7 +304,7 @@
                 </svg>
               </div>
               <div class="c-popular-dishes__slide-number--content">
-                <span class="">1</span> / <span>3</span>
+                <span class="active">1</span> / <span>3</span>
               </div>
               <div class="c-popular-dishes__slide-number--next js-popular-dishes--next">
                 <svg width="37" height="16" viewBox="0 0 37 16" fill="none" xmlns="http://www.w3.org/2000/svg">

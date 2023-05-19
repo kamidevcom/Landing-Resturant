@@ -13,9 +13,9 @@
     }
   });
 
-  let tab = document.querySelectorAll(".js-tab-nav");
+  let tab = document.querySelectorAll(".js-tab--item");
   if (tab) {
-    let tabPane = document.querySelectorAll(".js-tab-pane");
+    let tabPane = document.querySelectorAll(".js-our-menu__list");
 
     let openTab = (id) => {
       tab.forEach((e, index) => {
