@@ -20,7 +20,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML Starter Kit</title>
+    <title>Mercadito</title>
 
     <!-- Disable tap highlight on IE -->
     <meta name="msapplication-tap-highlight" content="no" />
@@ -72,6 +72,10 @@
     <!-- endbuild -->
 
     <!-- build:css styles/main.min.css -->
+    <link rel="stylesheet" href="../node_modules/flickity/css/flickity.css" />
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.min.css -->
     <link rel="stylesheet" href="styles/main.css" />
     <!-- endbuild -->
   </head>
@@ -80,7 +84,7 @@
     <!-- Header Section -->
     <header>
       <nav class="c-navbar">
-        <div class="container c-navbar--container">
+        <div class="o-section__wrapper c-navbar--container">
           <a href="#" class="u-link" aria-label="Mercadito">
             <img class="c-navbar__logo" src="images/logo.svg" alt="" />
           </a>
@@ -120,22 +124,22 @@
     <!-- end - Header Section -->
 
     <!-- Why Us Section -->
-    <section class="c-section--why-us">
-      <div class="container">
+    <section class="o-section c-section__why-us">
+      <div class="container o-section__wrapper">
         <div class="c-section c-why-us">
-          <div class="c-why-us--content">
-            <h2 class="o-section--title">Why Costomers Like us?</h2>
+          <div class="c-why-us__content">
+            <h2 class="o-section__title">Why Costomers Like us?</h2>
             <div>
-              <p class="o-section--text">
+              <p class="o-section__text">
                 When we first opened our restaturant, it didn't take a long time
                 ofr us to prove our diffrence.
               </p>
-              <p class="o-section--text">
+              <p class="o-section__text">
                 Our native chefs, the Chinese atmosphere of the restaturant, the
                 variety of dishes, the high quality of foods, and affordable
                 prices made us well-known very soon.
               </p>
-              <p class="o-section--text">
+              <p class="o-section__text">
                 Today, we have customers not only from this area but also from
                 other cities.
               </p>
@@ -150,24 +154,24 @@
     <!-- end - Why Us Section -->
 
     <!-- Our Menu Section -->
-    <section class="c-section--our-menu">
-      <div class="container">
+    <section class="o-section c-section--our-menu">
+      <div class="container o-section__wrapper">
         <div class="c-section c-our-menu">
-          <div class="c-our-menu--content">
+          <div class="c-our-menu__content">
             <div class="c-tab">
               <div class="c-tab--wrap">
-                <h3 class="o-section--title">Our Menu</h3>
+                <h3 class="o-section__title">Our Menu</h3>
 
                 <ul class="c-tab__items">
-                  <li class="is-active js-tab--item">starter</li>
-                  <li class="js-tab--item">main dishes</li>
-                  <li class="js-tab--item">desserts</li>
+                  <li class="is-active js-tab__item">starter</li>
+                  <li class="js-tab__item">main dishes</li>
+                  <li class="js-tab__item">desserts</li>
                 </ul>
               </div>
               <div class="c-our-menu__list">
                 <div class="c-tab__content js-our-menu__list is-active">
                   <div class="c-our-menu__item">
-                    <div class="c-our-menu__item--head">
+                    <div class="c-our-menu__item-head">
                       <h5 class="c-title">Pork Wontons</h5>
                       <p class="c-text">
                         Pork, chestnuts, bamboo shoots, spring onion egg, wonton
@@ -176,7 +180,7 @@
                     <span class="c-price">$35</span>
                   </div>
                   <div class="c-our-menu__item">
-                    <div class="c-our-menu__item--head">
+                    <div class="c-our-menu__item-head">
                       <h5 class="c-title">Dim Sums</h5>
                       <p class="c-text">
                         Chestnuts, mushroom, spring onion, ginger, coriander
@@ -185,7 +189,7 @@
                     <span class="c-price">$35</span>
                   </div>
                   <div class="c-our-menu__item">
-                    <div class="c-our-menu__item--head">
+                    <div class="c-our-menu__item-head">
                       <h5 class="c-title">Real Kung Pao chicken</h5>
                       <p class="c-text">
                         Peanuts, chicken tights, rice wine, cornflour, soy sauce, chillies
@@ -194,7 +198,7 @@
                     <span class="c-price">$35</span>
                   </div>
                   <div class="c-our-menu__item">
-                    <div class="c-our-menu__item--head">
+                    <div class="c-our-menu__item-head">
                       <h5 class="c-title">Stir Fried Tofu with Rice</h5>
                       <p class="c-text">
                         Tofu, rice, vinger, soy sauce, seasmae oil, ginger
@@ -205,7 +209,7 @@
                 </div>
                 <div class="c-tab__content js-our-menu__list">
                   <div class="c-our-menu__item">
-                    <div class="c-our-menu__item--head">
+                    <div class="c-our-menu__item-head">
                       <h5 class="c-title">Stir Fried Tofu with Rice</h5>
                       <p class="c-text">
                         Tofu, rice, vinger, soy sauce, seasmae oil, ginger
@@ -214,7 +218,7 @@
                     <span class="c-price">$35</span>
                   </div>
                   <div class="c-our-menu__item">
-                    <div class="c-our-menu__item--head">
+                    <div class="c-our-menu__item-head">
                       <h5 class="c-title">Chinese pepper steak</h5>
                       <p class="c-text">
                         Steak, pepper, vinger wine, ginger
@@ -223,7 +227,7 @@
                     <span class="c-price">$35</span>
                   </div>
                   <div class="c-our-menu__item">
-                    <div class="c-our-menu__item--head">
+                    <div class="c-our-menu__item-head">
                       <h5 class="c-title">Chicken with Chestnuts</h5>
                       <p class="c-text">
                         Chicken, chestnuts, soy sauce, vinger
@@ -232,7 +236,7 @@
                     <span class="c-price">$35</span>
                   </div>
                   <div class="c-our-menu__item">
-                    <div class="c-our-menu__item--head">
+                    <div class="c-our-menu__item-head">
                       <h5 class="c-title">Honey Walnut Shrimp</h5>
                       <p class="c-text">
                         Wulnuts, mayonnaise, prawns, honey, egg, rice flour
@@ -243,7 +247,7 @@
                 </div>
                 <div class="c-tab__content js-our-menu__list">
                   <div class="c-our-menu__item">
-                    <div class="c-our-menu__item--head">
+                    <div class="c-our-menu__item-head">
                       <h5 class="c-title">Kung Pao chicken</h5>
                       <p class="c-text">
                         Chicken tights, shaoxing wine, soy sauce, chilli, peanuts, cucumber
@@ -252,7 +256,7 @@
                     <span class="c-price">$35</span>
                   </div>
                   <div class="c-our-menu__item">
-                    <div class="c-our-menu__item--head">
+                    <div class="c-our-menu__item-head">
                       <h5 class="c-title">Tsao's chicken</h5>
                       <p class="c-text">
                         Chicken tights, rice vinger, rice wine, orange zest, banana ketchup, garlic
@@ -261,7 +265,7 @@
                     <span class="c-price">$35</span>
                   </div>
                   <div class="c-our-menu__item">
-                    <div class="c-our-menu__item--head">
+                    <div class="c-our-menu__item-head">
                       <h5 class="c-title">Chinese Steamed Halibut</h5>
                       <p class="c-text">
                         Fillet halibut, ginger, coriander, soy sauce
@@ -270,7 +274,7 @@
                     <span class="c-price">$35</span>
                   </div>
                   <div class="c-our-menu__item">
-                    <div class="c-our-menu__item--head">
+                    <div class="c-our-menu__item-head">
                       <h5 class="c-title">Dim Sums</h5>
                       <p class="c-text">
                         Chestnuts, mushroom, spring onion, ginger, coriander
@@ -288,11 +292,11 @@
     <!-- end - Our Menu Section -->
 
     <!-- Popular Dishes -->
-    <section class="c-section--popular-dishes">
-      <div class="container">
+    <section class="o-section c-section--popular-dishes">
+      <div class="container o-section__wrapper">
         <div class="c-section c-popular-dishes">
-          <div class="c-popular-dishes--header">
-            <h3 class="o-section--title">
+          <div class="c-popular-dishes__header">
+            <h3 class="o-section__title">
               The Most Popular Dishes
             </h3>
             <div class="c-popular-dishes__slide-number">

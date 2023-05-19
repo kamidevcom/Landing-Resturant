@@ -1,5 +1,6 @@
-.c-section--why-us {
+.c-section__why-us {
   color: #fff;
+  padding-top: 0;
 
   @include mq(md) {
     padding: 72px 34px 64px 34px;
@@ -41,7 +42,7 @@
     }
   }
 
-  .c-why-us--content {
+  .c-why-us__content {
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -13,7 +13,7 @@
     }
   });
 
-  let tab = document.querySelectorAll(".js-tab--item");
+  let tab = document.querySelectorAll(".js-tab__item");
   if (tab) {
     let tabPane = document.querySelectorAll(".js-our-menu__list");
 

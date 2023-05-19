@@ -3,7 +3,7 @@
     padding: 8px 34px;
   }
 
-  .c-popular-dishes--header {
+  .c-popular-dishes__header {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -40,17 +40,27 @@
   }
 }
 
-.c-popular-dishes__image img{
-  width: 100%;
+.c-popular-dishes__image {
+  @include mq(lg) {
+    width: 55%;
+  }
+  img {
+    width: 100%;
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.25);
+  }
 }
 
 .c-popular-dishes__content {
   padding-top: 40px;
   text-align: center;
 
-  @include mq(lg) {
-    padding: 0 0 0 40px;
+  @include mq(md) {
     text-align: left;
+  }
+
+    @include mq(lg) {
+    padding: 0 0 0 40px;
+    width: 45%;
   }
 
   .c-popular-dishes__title {
@@ -97,6 +107,9 @@
   }
 }
 
-.c-popular-dishes__slide-number--content .active {
-  color: $orange-500;
+.c-popular-dishes__slide-number--content {
+  user-select: none;
+  .active {
+    color: $orange-500;
+  }
 }

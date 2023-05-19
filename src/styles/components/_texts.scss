@@ -1,4 +1,4 @@
-.o-section--title {
+.o-section__title {
   position: relative;
   @include font-size(34px, 45px);
   font-family: $roboto-slab;
@@ -31,7 +31,7 @@
   }
 }
 
-.o-section--text {
+.o-section__text {
   font-family: $catamaran;
   @include font-size(20px, 130%);
   font-weight: 400;

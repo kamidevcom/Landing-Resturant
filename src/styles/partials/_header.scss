@@ -11,7 +11,6 @@ header{
   min-height: 100vh;
   color: #fff;
   .c-hero {
-    // padding-top: 350px;
     padding-top: 180px;
     max-width: 584px;
     margin: auto;
@@ -22,7 +21,6 @@ header{
 
     .c-hero__title {
       font-family: $roboto-slab;
-      // @include font-size(52px, 62px);
       @include font-size(35px, 120%);
       margin-bottom: 20px;
       text-align: center;
@@ -34,7 +32,6 @@ header{
     }
 
     .c-hero__description {
-      // @include font-size(24px, 39px);
       @include font-size(22px, 36px);
       text-align: center;
       font-weight: 400;
@@ -43,15 +40,20 @@ header{
 
     .c-hero__btn-group {
       justify-content: center;
-      // margin-top: 69px;
       display: flex;
       flex-direction: column;
-      padding: 70px;
-      // gap: 40px;
+      padding: 70px 0;
       gap: 16px;
+      width: 220px;
+      margin: auto;
       @include mq(md) {
         flex-direction: row;
         gap: 20px;
+        padding: 70px;
+        width: 100%;
+      }
+      @include mq(md) {
+        gap: 40px;
       }
     }
   }
@@ -60,7 +62,6 @@ header{
 .c-navbar {
   position: absolute;
   width: 100%;
-  // padding-top: 60px;
   padding: 24px;
   @include mq(md) {
     padding: 64px;
@@ -80,7 +81,6 @@ header{
     .u-link {
       .c-navbar__logo {
         height: 78px;
-        // height: 113px;
         @include mq(md) {
           height: 130px;
         }
@@ -111,6 +111,8 @@ header{
         gap: 40px;
         height: unset;
         flex-direction: row;
+        left: 0;
+        background-image: unset;
         li {
           &.current-menu-item {
             border-bottom: 1px solid $orange-500;
